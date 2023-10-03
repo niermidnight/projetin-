@@ -152,7 +152,7 @@ body {
 .modal {
   background-color: rgb(255, 255, 255);
   margin-left: 150px;
-  padding: 20px 350px;
+  padding: 10px ;
   border-radius: 5px;
   width: 100%;
   max-width: 600px;
@@ -163,7 +163,7 @@ body {
 .logo {  
 display: block; 
 margin: 20px auto;
-max-width: 250px;
+max-width: 200px;
 }
 
 .button {
