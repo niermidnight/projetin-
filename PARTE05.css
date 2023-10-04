@@ -1,6 +1,8 @@
 body { 
   font-family: Arial, Helvetica, sans-serif;
   background-color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
 #menu {
@@ -13,7 +15,9 @@ body {
   overflow-x: hidden;
   padding-top: 20px;
   color: #fff;
+  transition: all 0.3s;
 }
+
 
 #menu a {
   padding: 15px 25px;
@@ -30,9 +34,8 @@ body {
 }
 
 #conteudo {
-  margin-left: 240px;
-  margin-bottom: 0;
-  padding: 0px;
+  margin-left: 250px;  
+  padding: 20px;
 }
 
 #logo {
@@ -53,10 +56,7 @@ body {
 .container {
   background-color: #ffffff;
   margin-inline: initial;
-  padding: 20px;
-  padding-left: 40px;
-  padding-bottom: 5px;
- margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .header {
@@ -67,12 +67,11 @@ body {
 }
 
 .caixa {
-  width: 100%;
-  display: flex;
-  align-items: center;
+  width: 40%;
+  margin-left: 390px;
+  margin-right: auto;
   padding: 10px;
   border-radius: 5px;
- 
 }
 
 .azul {
@@ -81,23 +80,25 @@ body {
 }
 
 #barrapesquisar {
-  margin-left: 10px;
+  margin-left: 7px; 
   border: none;
   border-radius: 5px;
   padding: 10px;
-  font-size: 20px;
+  font-size: 16px;
+  width: 70%; /* Adicionei largura para a pesquisa ocupar 80% da tela */
 }
 
 
-.list{
-    border-collapse: collapse;
-    margin-top: 20px;
+.list {
+  border-collapse: collapse;
+  margin-top: 20px;
+  width: 100%; /* A tabela ocupará toda a largura disponível */
 }
 
 
 .list th,
 .list td {
-  padding: 10px 30px 10px 30px;
+  padding: 10px;
   text-align: center;
   
 }
@@ -151,7 +152,8 @@ body {
 
 .modal {
   background-color: rgb(255, 255, 255);
-  margin-left: 150px;
+  margin-left: 80px;
+  margin-bottom: 20px;
   padding: 10px ;
   border-radius: 5px;
   width: 100%;
@@ -234,6 +236,15 @@ input[type="radio"] {
   background-color: #ccc;
   color: #999;
   cursor: not-allowed;
+}
+
+#btnsalvar{
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  margin-top: 10px;
+  border-radius: 5px;
+  
 }
 
 .active {
