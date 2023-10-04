@@ -21,7 +21,7 @@ const setItensBD = () => localStorage.setItem('dbfunc', JSON.stringify(itens))
 
 const btnSalvar = document.querySelector('#btnsalvar')
 const barrapesquisar = document.getElementById('barrapesquisar')
-const itemsPerPage = 15
+const itemsPerPage = 4
 
 let currentPage = 1
 let itensFiltrados = []
@@ -258,6 +258,8 @@ document.getElementById("naoInfoSigilosa").addEventListener("click", function ()
   sInfoSigilosa = "Não"
   ocultarCampoSigiloso()
 })
+
+
 
 
 function addOrUpdateItem() {
