@@ -18,16 +18,18 @@
 </head>
 
 <body>
-    <!--Menu do erick-->
-    <div id="menu">
+     <!-- Menu do Erick -->
+     <div id="menu">
         <div id="logo">
             <img src="Brasao_Governo_branco_500.png" width="150" alt="logo-aqui">
         </div>
-        <a href="#">Início</a>
-        <a href="PARTE05.html">Cadastro</a>
+        <nav>
+            <a href="#">Início</a>
+            <a href="PARTE05.html">Cadastro</a>                  
+        </nav>
+        
     </div>
-    <!--Menu do erick ^ -->
-
+    <!-- Fim do Menu do Erick -->
 
 
     <div id="conteudo">
@@ -36,6 +38,7 @@
                 <div id="caixa_pesquisar" class="caixa azul">
                     <button onclick="openmodal()" id="new">+<i></i></button>
                     <input type="text" id="barrapesquisar" placeholder="Pesquisar..." />
+                 
 
                 </div>
             </div>
@@ -79,7 +82,7 @@
                 <h2>Catálago de Sistemas</h2>
                 <a href="PARTE05.html" class="button">x</a>
                 <img src="/Brasao_Governo_colorido_500.png" alt="brasao" class="logo">
-                <form>
+                <form action="#"> 
                     <label for="nome">Nome do Software:</label>
                     <input type="text" id="nome" name="nome" required>
 
@@ -131,7 +134,7 @@
                 if (naoInfoSigilosa.checked) {
                     campoInfoSigilosa.style.display = "none"
                     qualInfoSigilosa.required = false
-                    qualInfoSigilosa.value = ""
+                    qualInfoSigilosa.value = "Nenhuma";
                 }
             }
             document.getElementById("simInfoSigilosa").addEventListener("click", mostrarCampoSigiloso)
