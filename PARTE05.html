@@ -38,7 +38,6 @@
                 <div id="caixa_pesquisar" class="caixa azul">
                     <button onclick="openmodal()" id="new">+<i></i></button>
                     <input type="text" id="barrapesquisar" placeholder="Pesquisar..." />
-                 
 
                 </div>
             </div>
@@ -60,13 +59,11 @@
                             </th>
                         </tr>
                     </thead>
-
-                    <tbody>
+                    <tbody id="resultado">
                         <tr>
                             <td class="box"></td>
                         </tr>
                     </tbody>
-
                 </table>
             </div>
 
@@ -141,6 +138,9 @@
             document.getElementById("naoInfoSigilosa").addEventListener("click", ocultarCampoSigiloso)
         </script>
         <script src="PARTE05.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+
+        <button onclick="ExportToExcel('xlsx')">Exportar tabela para excel</button>
 
 
 
