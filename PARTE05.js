@@ -260,8 +260,6 @@ document.getElementById("naoInfoSigilosa").addEventListener("click", function ()
 })
 
 
-
-
 function addOrUpdateItem() {
   itens[id] = {
     'nome': sNome.value
@@ -295,6 +293,15 @@ function loadItens() {
   renderizarItensFiltrados()
 }
 
+
+// EXPORTAÇAO
+function ExportToExcel(type, fn, dl) {
+  var elt = document.getElementById('resultado');
+  var wb = XLSX.utils.table_to_book(elt, { sheet: "sheet1" });
+  return dl ?
+    XLSX.write(wb, { bookType: type, bookSST: true, type: 'base64' }):
+    XLSX.writeFile(wb, fn || ('Catalogo de sistemas.' + (type || 'xlsx')));
+}
 
 
 loadAndSortItens()
