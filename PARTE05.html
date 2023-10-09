@@ -18,16 +18,16 @@
 </head>
 
 <body>
-     <!-- Menu do Erick -->
-     <div id="menu">
+    <!-- Menu do Erick -->
+    <div id="menu">
         <div id="logo">
             <img src="Brasao_Governo_branco_500.png" width="150" alt="logo-aqui">
         </div>
         <nav>
             <a href="#">Início</a>
-            <a href="PARTE05.html">Cadastro</a>                  
+            <a href="PARTE05.html">Cadastro</a>
         </nav>
-        
+
     </div>
     <!-- Fim do Menu do Erick -->
 
@@ -38,6 +38,8 @@
                 <div id="caixa_pesquisar" class="caixa azul">
                     <button onclick="openmodal()" id="new">+<i></i></button>
                     <input type="text" id="barrapesquisar" placeholder="Pesquisar..." />
+                   <!-- <button id="excel" onclick="ExportToExcel('xlsx')">Exportar para Excel<img id="img-excel" src="file-earmark-spreadsheet.svg" alt=""></button> -->
+                    
 
                 </div>
             </div>
@@ -79,12 +81,12 @@
                 <h2>Catálago de Sistemas</h2>
                 <a href="PARTE05.html" class="button">x</a>
                 <img src="/Brasao_Governo_colorido_500.png" alt="brasao" class="logo">
-                <form action="#"> 
+                <form action="#">
                     <label for="nome">Nome do Software:</label>
                     <input type="text" id="nome" name="nome" required>
 
                     <label for="versao">Versão:</label>
-                    <input type="text" id="versao" name="versao" maxlength="8" required>
+                    <input type="text" id="versao" name="versao" required>
 
                     <label for="finalidade">Finalidade:</label>
                     <textarea type="text" id="finalidade" name="finalidade" required></textarea>
@@ -140,7 +142,7 @@
         <script src="PARTE05.js"></script>
         <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
 
-        <button onclick="ExportToExcel('xlsx')">Exportar tabela para excel</button>
+
 
 
 
